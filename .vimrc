@@ -24,6 +24,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
+Plugin 'bling/vim-bufferline'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -47,7 +48,19 @@ filetype plugin indent on    " required
 
 source ~/.vim/.vimrc_neocomplcache
 
+syntax on                   " Syntax highlighting
+set mouse=a                 " Automatically enable mouse usage
+set mousehide               " Hide the mouse cursor while typing
+scriptencoding utf-8
+
+set showmode
 set showmatch
+set nu
+set cursorline
+
+highlight clear SignColumn      " SignColumn should match background
+highlight clear LineNr          " Current line number row will have same background color in relative mode
+highlight clear CursorLineNr    " Remove highlight color from current line number
 
 set smartindent
 set tabstop=4
@@ -64,3 +77,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Monokai theme
 syntax enable
 " colorscheme monokai
+
+
+" Neocomplete
+
