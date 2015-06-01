@@ -25,6 +25,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'bling/vim-bufferline'
+Plugin 'bling/vim-airline'
 
 " Git
 Plugin 'tpope/vim-fugitive'
