@@ -25,6 +25,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'bling/vim-bufferline'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -45,6 +46,10 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+let mapleader = "\<Space>"
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
 
 source ~/.vim/.vimrc_neocomplcache
 
@@ -69,6 +74,11 @@ set expandtab
 
 imap ii <esc>
 set pastetoggle=<F2>
+
+" for command mode
+nnoremap <S-Tab> <<
+" " for insert mode
+inoremap <S-Tab> <C-d>
 
 " Open Nerdtree default
 autocmd StdinReadPre * let s:std_in=1
