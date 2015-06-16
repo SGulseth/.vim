@@ -27,6 +27,7 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'bling/vim-airline'
 
 " Git
 Plugin 'tpope/vim-fugitive'
