@@ -10,6 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Colors
+Plugin 'altercation/vim-colors-solarized'
+
 " Plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
@@ -28,10 +31,17 @@ Plugin 'bling/vim-bufferline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'bling/vim-airline'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+
+" Langs
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'othree/html5.vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -53,7 +63,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 
-let g:bufferline_echo=0 
+let g:bufferline_echo=0
 
 source ~/.vim/.vimrc_neocomplcache
 
