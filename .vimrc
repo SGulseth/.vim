@@ -53,6 +53,8 @@ let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 
+let g:bufferline_echo=0 
+
 source ~/.vim/.vimrc_neocomplcache
 
 syntax on                   " Syntax highlighting
