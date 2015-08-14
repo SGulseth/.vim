@@ -102,6 +102,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 syntax enable
 " colorscheme monokai
 
+set ts=2 sw=2 filetype=cpp
+set ts=2 sw=2 filetype=h
 
 " Neocomplete
 
