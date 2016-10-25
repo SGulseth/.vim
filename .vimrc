@@ -62,6 +62,7 @@ filetype plugin indent on    " required
 let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>r :%s/\<<C-r><C-w>\>/
 
 let g:bufferline_echo=0
 
@@ -76,6 +77,7 @@ set showmode
 set showmatch
 set nu
 set cursorline
+set backspace=indent,eol,start
 
 highlight clear SignColumn      " SignColumn should match background
 highlight clear LineNr          " Current line number row will have same background color in relative mode
