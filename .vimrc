@@ -31,7 +31,10 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'bling/vim-bufferline'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'Raimondi/delimitMate'
+if executable('tmux')
+    Plugin 'christoomey/vim-tmux-navigator'
+endif
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -61,11 +64,14 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+
 
 let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>r :%s/\<<C-r><C-w>\>/
+nmap <silent> <Leader>f :NERDTreeToggle<CR>
 
 let g:bufferline_echo=0
 
