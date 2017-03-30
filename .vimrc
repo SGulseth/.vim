@@ -38,6 +38,7 @@ endif
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'tpope/vim-sleuth'
 
 " Git
 Plugin 'tpope/vim-fugitive'
